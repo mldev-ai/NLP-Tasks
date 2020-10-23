@@ -1,2 +1,2 @@
 # NLP-Tasks
-Various NLP tasks deployed using Huggingface and Flask
+Various NLP tasks using Huggingface deployed on Heroku with Docker and Flask.
