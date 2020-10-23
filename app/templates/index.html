@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>NLP App</title>
+      <style>
+        h1 {text-align: center;}
+        h2 {text-align: center;}
+        form {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+        table {text-align: center;}
+        table,
+        th,
+        td {
+          padding: 10px;
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        .my-custom-scrollbar {
+          position: relative;
+          height: 400px;
+          width: 800px;
+          overflow: auto;
+        }
+        .table-wrapper-scroll-y {
+          display: block;
+        }
+        .center {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      </style>
+
+      <!--JS-->
+      <!-- <script>
+
+      </script> -->
+    </head>
+  <body>
+  
+    <h1>NLP Tasks using Huggingface</h1>
+    <h2>Sentiment Analysis</h2>
+    <form class="form-inline" id="myform" action = "{{ url_for('classify_sentiment') }}" method = "POST">
+        <span>Query: <input type="text" placeholder="Enter Query" name="query" required/></span>
+        <span><input type = "submit" value = "submit" /></span>
+    </form>
+
+  </body>
+</html>
