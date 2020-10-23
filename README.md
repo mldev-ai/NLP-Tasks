@@ -1,2 +1,2 @@
 # NLP-Tasks
-Various NLP tasks deployed using Flask
+Various NLP tasks deployed using Huggingface and Flask
