@@ -29,6 +29,10 @@
           margin-left: auto;
           margin-right: auto;
         }
+        h1, h2, h3, h4, h5, h6{
+            margin-top:50px;
+            margin-bottom:40px;
+        }
       </style>
 
       <!--JS-->
@@ -39,9 +43,26 @@
   <body>
   
     <h1>NLP Tasks using Huggingface</h1>
+    
+    <p></p>
+
     <h2>Sentiment Analysis</h2>
     <form class="form-inline" id="myform" action = "{{ url_for('classify_sentiment') }}" method = "POST">
         <span>Query: <input type="text" placeholder="Enter Query" name="query" required/></span>
+        <span><input type = "submit" value = "submit" /></span>
+    </form>
+
+    <h2>Extractive Question Answering</h2>
+    <form class="form-inline" id="myform" action = "{{ url_for('question_answering') }}" method = "POST">
+        <span>Context: <textarea placeholder="Enter Context" name="context" cols="50" rows="3" ></textarea>></span>
+        <p></p>
+        <span>Question: <input type="text" placeholder="Enter Question" name="question" required/></span>
+        <span><input type = "submit" value = "submit" /></span>
+    </form>
+
+    <h2>Text Generation</h2>
+    <form class="form-inline" id="myform" action = "{{ url_for('generate_text') }}" method = "POST">
+        <span>Context: <textarea placeholder="Enter Context" name="context" cols="50" rows="3" ></textarea>></span>
         <span><input type = "submit" value = "submit" /></span>
     </form>
 
