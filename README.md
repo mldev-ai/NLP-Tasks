@@ -53,6 +53,8 @@ Right now, the most important contribution that can be made to this repo are:
 
 3. Add more NLP tasks to the app.
 
+4. BTW, if someone can make nice UI using CSS or JS. That would be a huge plus. :)
+
 ## Acknowledgement
 
 [Huggingface's transformers](https://huggingface.co/transformers/) library has revolutionised the way state-of-the-art NLP models are being used in real-world. Without, this library, the app made here would have taken tremendous amount of time (compared to what it took rn, just about an hour). :)
