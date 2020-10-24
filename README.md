@@ -51,7 +51,7 @@ Contributions are most welcome.
 
 Right now, the most important contribution that can be made to this repo are:
 
-1. Reduce the inference time, currently its two high (around 10 seconds for question answering task).
+1. Reduce the inference time, currently its too high (around 10 seconds for question answering task).
 
 2. Deploy the app to any hosting site such as heroku, AWS, or Azure.
 
@@ -61,4 +61,4 @@ Right now, the most important contribution that can be made to this repo are:
 
 ## Acknowledgement
 
-[Huggingface's transformers](https://huggingface.co/transformers/) library has revolutionised the way state-of-the-art NLP models are being used in real-world. Without, this library, the app made here would have taken tremendous amount of time (compared to what it took rn, just about an hour). :)
+[Huggingface's transformers](https://huggingface.co/transformers/) library has revolutionised the way state-of-the-art NLP models are being used in real-world. Without, this library, the app made here would have taken tremendous amount of time (compared to what it took now).
