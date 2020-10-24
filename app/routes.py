@@ -54,3 +54,6 @@ def generate_text():
 
     return render_template("results.html", result=result, task="Text Generation")
     # return jsonify(result)
+
+if __name__ == "__main__":
+    app.run()
