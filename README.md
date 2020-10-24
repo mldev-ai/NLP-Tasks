@@ -26,11 +26,15 @@ Contributions are most welcome.
 4. Run the flask-app:
 
     * Windows Powershell:
+    
         `$env:FLASK_APP="app.py"`
+    
         `flask run`
 
     * Linux:
+        
         `export FLASK_APP=app.py`
+        
         `flask run`
 
 ## Notes
