@@ -17,7 +17,11 @@ def classify_sentiment():
     query = form_r["query"][0]
     result = return_sentiment(query)
     result[0]["query"] = query
-    return jsonify(result)
+
+    print(result)
+
+    return render_template("results.html", result=result, task="Sentiment Analysis")
+    # return jsonify(result)
 
 @app.route("/squad", methods=["POST", "GET"])
 def question_answering():
@@ -33,7 +37,8 @@ def question_answering():
     result["question"] = question
     result["context"] = context
 
-    return jsonify(result)
+    return render_template("results.html", result=result, task="Question Answering")
+    # return jsonify(result)
 
 @app.route("/gpt2", methods=["POST", "GET"])
 def generate_text():
@@ -45,5 +50,7 @@ def generate_text():
     result = return_generated_text(context)
     
     result[0]["context"] = context
+    print(result)
 
-    return jsonify(result)
+    return render_template("results.html", result=result, task="Text Generation")
+    # return jsonify(result)

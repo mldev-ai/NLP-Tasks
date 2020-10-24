@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>NLP App</title>
+      <style>
+        h1 {text-align: center;}
+        h2 {text-align: center;}
+        form {text-align: center;}
+        p {
+            text-align: center;
+            /* display: inline-block; */
+        }
+        div {
+            text-align: center;
+            /* width: 600px; */
+        }
+        table {text-align: center;}
+        table,
+        th,
+        td {
+          padding: 10px;
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        .my-custom-scrollbar {
+          position: relative;
+          height: 400px;
+          width: 800px;
+          overflow: auto;
+        }
+        .table-wrapper-scroll-y {
+          display: block;
+        }
+        .center {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        h1, h2, h3, h4, h5, h6{
+            margin-top:50px;
+            margin-bottom:40px;
+        }
+      </style>
+
+      <!--JS-->
+      <!-- <script>
+
+      </script> -->
+    </head>
+  <body>
+  
+    <h1>NLP Tasks using Huggingface</h1>
+    
+    <p></p>
+
+    <h2>Result for {{ task }}</h2>
+
+    {% if task == "Sentiment Analysis" %}
+        <div>
+            <p><b>Query:</b> {{ result[0]["query"] }}</p>
+            <p><b>Sentiment:</b> {{ result[0]["label"] }}</p>
+            <p><b>Confidence:</b> {{ result[0]["score"] }}</p>
+        </div>
+    {% endif %}
+
+    {% if task == "Question Answering" %}
+        <div>
+            <p><b>Context:</b> {{ result["context"] }}</p>
+            <p><b>Question:</b> {{ result["question"] }}</p>
+            <p><b>Answer:</b> {{ result["answer"] }}</p>
+        </div>
+    {% endif %}
+
+    {% if task == "Text Generation" %}
+        <div>
+            <p><b>Context:</b> {{ result[0]["context"] }}</p>
+            
+            <p><b>Full-Text:</b> {{ result[0]["generated_text"] }}</p>
+            
+        </div>
+    {% endif %}
+
+  </body>
+</html>

@@ -1,4 +1,4 @@
-FROM python:slim
+FROM python:3.7-stretch
 
 WORKDIR /code
 COPY requirements.txt requirements.txt
