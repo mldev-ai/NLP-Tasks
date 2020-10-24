@@ -15,7 +15,7 @@ Contributions are most welcome.
 ## Usage
 
 1. Clone the repo: 
-    `git clone https://github.com/ashishu007/NLP-Tasks.git`
+    `git clone https://github.com/mldev-ai/NLP-Tasks.git`
 
 2. Navigate into the downloaded repo:
     `cd NLP-Tasks`
