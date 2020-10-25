@@ -36,6 +36,10 @@ Contributions are most welcome.
         `export FLASK_APP=app.py`
         
         `flask run`
+        
+        * If getting `command not found: flask` error, try this:
+        
+        `python3 -m flask run`
 
 ## Notes
 
